@@ -51,7 +51,7 @@ const Menu = styled.ul`
     align-items: center;
     justify-content: flex-end;
 
-    @media (max-width: 1410px) {
+    @media (max-width: 1080px) {
         display: none;
     }
 
@@ -69,6 +69,10 @@ const ATag = styled.a`
     font-weight: 300;
     transition: all 0.5s ease-in-out;
 
+    @media (max-width: 1480px) {
+        font-size: 18px;
+    } 
+
 
     &:hover {
         color: ${props => props.active ? "" : "#0063D5"};
@@ -82,7 +86,7 @@ const MobileMenuContainer = styled.div`
     height: 40px;
     margin-top: -8px;
 
-    @media (max-width: 1410px) {
+    @media (max-width: 1080px) {
         display: inline-block;
     } 
 `;
