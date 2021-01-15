@@ -25,19 +25,13 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const NavigationContainer = styled.div`
-    width: 95vw;
+    width: 90vw;
     height: 12vh;
-    margin-left: 2.5vw;
+    margin-left: 5vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    @media (max-width: 850px) {
-        width: 90vw;
-        margin-left: 5vw;
-    }
-
 `;
 
 const Title = styled.h1`
@@ -45,7 +39,7 @@ const Title = styled.h1`
     font-weight: 300;
     font-size: 48px;
 
-    @media (max-width: 1410px) {
+    @media (max-width: 1480px) {
         font-size: 34px;
     } 
 `;
