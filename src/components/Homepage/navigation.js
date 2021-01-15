@@ -117,6 +117,10 @@ const ATagMobile = styled.a`
         margin-right: 60px;
     }
 
+    @media (max-width: 375px) {
+        margin-right: 80px;
+    }
+
     &:first-of-type {
         margin-top: 15px;
     }
@@ -131,6 +135,10 @@ const HamburgerFloater = styled.div`
 
     @media (max-width: 450px) {
         margin-left: 80px;
+    }
+
+    @media (max-width: 375px) {
+        margin-left: 100px;
     }
 `;
 
