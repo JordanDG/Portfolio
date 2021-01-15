@@ -96,10 +96,6 @@ const MobileMenu = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
-
-    @media (max-width: 850px) {
-        margin-right: 40px;
-    }
 `;
 
 const ATagMobile = styled.a`
@@ -111,8 +107,9 @@ const ATagMobile = styled.a`
     background-color: transparent;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
+    margin-right: 20px;
 
-    @media (max-width: 350px) {
+    @media (max-width: 450px) {
         margin-right: 60px;
     }
 
@@ -128,7 +125,7 @@ const ATagMobile = styled.a`
 const HamburgerFloater = styled.div`
     margin-left: 120px;
 
-    @media (max-width: 350px) {
+    @media (max-width: 450px) {
         margin-left: 80px;
     }
 `;
