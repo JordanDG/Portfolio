@@ -88,7 +88,7 @@ const MobileMenuContainer = styled.div`
 `;
 
 const MobileMenu = styled.div`
-    width: 160px;
+    width: 180px;
     height: 20vh;
     transition: all 0.5s ease-in-out;
     animation: ${fadeIn} 0.5s linear;
@@ -96,6 +96,10 @@ const MobileMenu = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+
+    @media (max-width: 850px) {
+        margin-right: 40px;
+    }
 `;
 
 const ATagMobile = styled.a`
@@ -108,6 +112,10 @@ const ATagMobile = styled.a`
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 
+    @media (max-width: 350px) {
+        margin-right: 60px;
+    }
+
     &:first-of-type {
         margin-top: 15px;
     }
@@ -119,6 +127,10 @@ const ATagMobile = styled.a`
 
 const HamburgerFloater = styled.div`
     margin-left: 120px;
+
+    @media (max-width: 350px) {
+        margin-left: 80px;
+    }
 `;
 
 function NavigationBar(props) {
@@ -132,10 +144,10 @@ function NavigationBar(props) {
                 <Title>JordanDG.Dev</Title>
                 <Menu>
                     <li><ATag active href="#active">Home</ATag></li>
-                    <li><ATag href="#link">About Me</ATag></li>
+                    <li><ATag href="#link">About</ATag></li>
                     <li><ATag href="#link">Proficiencies</ATag></li>
                     <li><ATag href="#link">Projects</ATag></li>
-                    <li><ATag href="#link">Contact Me</ATag></li>
+                    <li><ATag href="#link">Contact</ATag></li>
                 </Menu>
                 <MobileMenuContainer>
                     <HamburgerFloater>
@@ -144,10 +156,10 @@ function NavigationBar(props) {
                     { isOpen && (
                         <MobileMenu>
                             <ATagMobile active href="#active">Home</ATagMobile>
-                            <ATagMobile href="#link">About Me</ATagMobile>
+                            <ATagMobile href="#link">About</ATagMobile>
                             <ATagMobile href="#link">Proficiencies</ATagMobile>
                             <ATagMobile href="#link">Projects</ATagMobile>
-                            <ATagMobile href="#link">Contact Me</ATagMobile>
+                            <ATagMobile href="#link">Contact</ATagMobile>
                         </MobileMenu>
                     )}
                 </MobileMenuContainer>
