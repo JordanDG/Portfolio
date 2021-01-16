@@ -26,8 +26,9 @@ const GlobalStyle = createGlobalStyle`
 
 const NavigationContainer = styled.div`
     width: 90vw;
-    height: 12vh;
+    height: 5vh;
     margin-left: 5vw;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,8 +41,12 @@ const Title = styled.h1`
     font-size: 48px;
 
     @media (max-width: 1480px) {
-        font-size: 34px;
+        font-size: 38px;
     } 
+
+    @media (max-width: 350px) {
+        font-size: 32px;
+    }
 `;
 
 const Menu = styled.ul`
@@ -82,18 +87,19 @@ const ATag = styled.a`
 /* Mobile Menu */
 const MobileMenuContainer = styled.div`
     display: none;
-    width: 160px;
-    height: 40px;
-    margin-top: -8px;
+    width: 50px;
+    height: 50px;
 
     @media (max-width: 1080px) {
-        display: inline-block;
+        display: block;
     } 
 `;
 
 const MobileMenu = styled.div`
-    width: 180px;
+    width: 159px;
     height: 20vh;
+    margin-top: 5px;
+
     transition: all 0.5s ease-in-out;
     animation: ${fadeIn} 0.5s linear;
     display: flex;
@@ -111,18 +117,9 @@ const ATagMobile = styled.a`
     background-color: transparent;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
-    margin-right: 20px;
-
-    @media (max-width: 450px) {
-        margin-right: 60px;
-    }
-
-    @media (max-width: 375px) {
-        margin-right: 80px;
-    }
 
     &:first-of-type {
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     &:hover {
@@ -131,15 +128,20 @@ const ATagMobile = styled.a`
 `;
 
 const HamburgerFloater = styled.div`
-    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -2px;
+    justify-content: flex-end;
+`;
 
-    @media (max-width: 450px) {
-        margin-left: 80px;
-    }
-
-    @media (max-width: 375px) {
-        margin-left: 100px;
-    }
+const MobileMenuAligner = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 45px;
+    width: 50px;
 `;
 
 function NavigationBar(props) {
@@ -158,10 +160,12 @@ function NavigationBar(props) {
                     <li><ATag href="#link">Projects</ATag></li>
                     <li><ATag href="#link">Contact</ATag></li>
                 </Menu>
-                <MobileMenuContainer>
-                    <HamburgerFloater>
-                        <Hamburger size={50} color={"#fff"} toggled={isOpen} toggle={setOpen} />
-                    </HamburgerFloater>
+                <MobileMenuAligner>
+                    <MobileMenuContainer>
+                        <HamburgerFloater>
+                            <Hamburger size={50} color={"#fff"} toggled={isOpen} toggle={setOpen} distance="md" />
+                        </HamburgerFloater>
+                    </MobileMenuContainer>
                     { isOpen && (
                         <MobileMenu>
                             <ATagMobile active href="#active">Home</ATagMobile>
@@ -171,7 +175,7 @@ function NavigationBar(props) {
                             <ATagMobile href="#link">Contact</ATagMobile>
                         </MobileMenu>
                     )}
-                </MobileMenuContainer>
+                </MobileMenuAligner>
             </NavigationContainer>
         </div>
     );
