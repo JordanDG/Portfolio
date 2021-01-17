@@ -94,17 +94,15 @@ const ProficienciesIconContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-top: 3.8vh;
+    margin-top: 50px;
     justify-content: space-between;
 
     @media (max-width: 1080px) {
-        margin-top: 4vh;
         width: 70%;
     } 
 
     @media (max-width: 600px) {
         width: 80%;
-        margin-left: 0%;
     } 
 `;
 
