@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import styled, { createGlobalStyle, keyframes }  from 'styled-components';
 import { Divide as Hamburger } from 'hamburger-react'
