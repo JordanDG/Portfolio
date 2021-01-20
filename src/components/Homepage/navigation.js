@@ -100,13 +100,15 @@ const MobileMenu = styled.div`
     width: 159px;
     height: 20vh;
     margin-top: 5px;
-
     transition: all 0.5s ease-in-out;
     animation: ${fadeIn} 0.5s linear;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+    position: relative;
+    z-index: 100;
+    background-color: #241f21;
 `;
 
 const ATagMobile = styled.a`

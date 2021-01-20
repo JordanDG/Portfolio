@@ -27,6 +27,10 @@ const HomeSplashTextContainer = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 1080px) {
+        height: 70vh;
+    }
 `;
 
 const HomeSplashTextHeading = styled.h1`
@@ -112,13 +116,16 @@ const HomeSplashContinuePromptArrowContainer = styled.div`
     width: 50px;
     height: 50px;
     display: flex;
-    margin-top: 15px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 44px;
     animation: ${LevitateAnimation} 1s infinite;
+
+    @media (max-width: 1080px) {
+        margin-top: 20px;
+    }
     
     &:hover {
         cursor: pointer;
