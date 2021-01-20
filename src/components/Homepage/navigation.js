@@ -12,21 +12,23 @@ const fadeIn = keyframes`
     }
 `;
 
+/* font-family: 'Istok Web', sans-serif; */
+
 const GlobalStyle = createGlobalStyle`
  * {
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
     background-color: #241f21;
+    font-family: 'Montserrat', sans-serif;
   }
 `;
 
 const NavigationContainer = styled.div`
-    width: 90vw;
+    width: 85vw;
     height: 5vh;
-    margin-left: 5vw;
+    margin-left: 7.5vw;
     margin-top: 2vh;
     display: flex;
     flex-direction: row;

@@ -71,6 +71,7 @@ const SectionTitle = styled.h1`
     font-weight: 500;
     color: #fff;
     margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
 
     @media (max-width: 1480px) {
         font-size: 24px;
