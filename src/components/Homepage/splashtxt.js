@@ -22,7 +22,7 @@ const LevitateAnimation = keyframes`
 const HomeSplashTextContainer = styled.div`
     width: 90vw;
     margin-left: 5vw;
-    height: 87vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -40,10 +40,12 @@ const HomeSplashTextHeading = styled.h1`
 
     @media (max-width: 1480px) {
         font-size: 56px;
+        width: 60vw;
     }
 
     @media (max-width: 1080px) {
         font-size: 48px;
+        width: 80vw;
     }
 `;
 
@@ -110,6 +112,7 @@ const HomeSplashContinuePromptArrowContainer = styled.div`
     width: 50px;
     height: 50px;
     display: flex;
+    margin-top: 15px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
