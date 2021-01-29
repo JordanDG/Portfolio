@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled, { createGlobalStyle, keyframes }  from 'styled-components';
-import { Divide as Hamburger } from 'hamburger-react'
+import { Divide as Hamburger } from 'hamburger-react';
+import Slide from 'react-reveal/Slide';
+import Rotate from 'react-reveal/Rotate';
 
 const fadeIn = keyframes`
     from {
@@ -155,14 +157,18 @@ function NavigationBar(props) {
         <div>
             <GlobalStyle />
             <NavigationContainer>
-                <Title>JordanDG.Dev</Title>
+                <Slide left>
+                    <Title>JordanDG.Dev</Title>
+                </Slide>
                 <Menu>
-                    <li><ATag active href="#active">Home</ATag></li>
-                    <li><ATag href="#link">About</ATag></li>
-                    <li><ATag href="#link">Proficiencies</ATag></li>
-                    <li><ATag href="#link">Projects</ATag></li>
-                    <li><ATag href="#link">Contact</ATag></li>
-                </Menu>
+                    <Rotate top right>
+                        <li><ATag active href="#active">Home</ATag></li>
+                        <li><ATag href="#link">About</ATag></li>
+                        <li><ATag href="#link">Proficiencies</ATag></li>
+                        <li><ATag href="#link">Projects</ATag></li>
+                        <li><ATag href="#link">Contact</ATag></li>
+                    </Rotate>
+                </Menu>  
                 <MobileMenuAligner>
                     <MobileMenuContainer>
                         <HamburgerFloater>

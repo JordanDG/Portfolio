@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes }  from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Fade from 'react-reveal/Fade';
 
 /* Icons */
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -136,10 +137,14 @@ function HomeSplashText(props) {
     return (
         <div>
             <HomeSplashTextContainer>
-                <HomeSplashTextHeading>Hi, I'm Jordan. I design and develop websites!</HomeSplashTextHeading>
+                <Fade top>
+                    <HomeSplashTextHeading>Hi, I'm Jordan. I design and develop websites!</HomeSplashTextHeading>
+                </Fade>
                 <HomeSplashButtons>
-                    <HomeSplashButtonLeft>Projects</HomeSplashButtonLeft>
-                    <HomeSplashButtonRight>Contact</HomeSplashButtonRight>
+                    <Fade bottom>
+                        <HomeSplashButtonLeft>Projects</HomeSplashButtonLeft>
+                        <HomeSplashButtonRight>Contact</HomeSplashButtonRight>
+                    </Fade>
                 </HomeSplashButtons>
             </HomeSplashTextContainer>
             <HomeSplashContinuePromptContainer>
