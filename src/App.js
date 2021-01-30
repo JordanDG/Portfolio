@@ -25,6 +25,10 @@ const SectionTwo = styled.section`
   @media (max-width: 1480px) {
     height: 70vh;
   }
+
+  @media (max-width: 499px) {
+    height: 125vh;
+  }
 `;
 const SectionThree = styled.section`
   width: 100%;

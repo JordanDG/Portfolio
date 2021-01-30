@@ -89,7 +89,7 @@ const SectionTitle = styled.h1`
 `;
 
 const ProficienciesIconContainer = styled.div`
-    width: 50%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -98,13 +98,15 @@ const ProficienciesIconContainer = styled.div`
     margin-top: 50px;
     justify-content: space-between;
 
-    @media (max-width: 1080px) {
-        width: 70%;
+    @media (max-width: 600px) {
+        width: 90%;
     } 
 
-    @media (max-width: 600px) {
-        width: 80%;
-    } 
+    & > img {
+        @media (max-width: 600px) {
+            margin-top: 30px;
+        } 
+    }
 `;
 
 function Proficiencies(props) {
@@ -113,7 +115,7 @@ function Proficiencies(props) {
             <ProficienciesContainer>
                 <SectionTitle>Proficiencies</SectionTitle>
                 <ProficienciesIconContainer>
-                    <Tooltip title="Adobe Illustrator" placement="top" arrow>
+                    <Tooltip title="Adobe Illustrator" placement="top" leaveTouchDelay="100" enterTouchDelay="100" arrow>
                         <img src={AdobeIllustrator} alt="Adobe Illustrator" />
                     </Tooltip>
                     <Tooltip title="Brackets IDE" placement="top" arrow>             
