@@ -86,7 +86,7 @@ function AboutMe(props) {
     return (
         <div>
             <AboutMeContainer>
-                <img src={ProfilePicture} alt="Profile Picture" />
+                <img src={ProfilePicture} alt="Profile" />
                 <AboutMeParagraphContainer>
                     <AboutMeTitle>About Me</AboutMeTitle>
                     <AboutMeText>My names Jordan DaGraca, I am currently undertaking a three-year course at Solent University in digital design and web development. I am a self-taught developer of 4 years’ experience, during which I taught myself the basics of web development, enhancing these skills through online courses and practice. My eventual aim is to progress on & become a full-stack developer, whereby I can manage both the front & back-end of a development project. On this page I detail my proficiencies, display examples of my work, and provide the means through which I can be contacted. </AboutMeText>
