@@ -5,14 +5,14 @@ import axios from "axios";
 const ContactContainer = styled.div`
     width: 90vw;
     height: 55vh;
-    margin-left: 2.5vw;
+    margin-left: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
     @media (max-width: 499px) {
-        height: 100vh;
+        height: 120vh;
         width: 85vw;
         margin-left: 7.5vw;
     }
@@ -184,6 +184,7 @@ const SubmissionSuccessMessageContainer = styled.div`
     width: 100%;
     height: 10vh;
     background-color: #0063D5;
+    text-align: center;
     color: #fff;
     font-size: 32px;
     font-weight: 300;

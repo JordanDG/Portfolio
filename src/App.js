@@ -15,6 +15,10 @@ import Proficiencies from "./components/Homepage/proficiencies.js";
 /* Section 4 */
 import Contact from "./components/Homepage/contact.js";
 
+/* Footer */
+import FooterMain from"./components/Homepage/footer.js";
+
+
 /* Section Styling */
 const SectionOne = styled.section`
   height: 100vh;
@@ -63,6 +67,7 @@ function App() {
       </SectionThree>
       <SectionFive>
         <Contact />
+        <FooterMain />
       </SectionFive>
     </div>
   );

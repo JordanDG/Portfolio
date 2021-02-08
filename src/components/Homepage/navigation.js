@@ -156,7 +156,7 @@ function NavigationBar(props) {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <div>
+        <div id="HomeID">
             <GlobalStyle />
             <NavigationContainer>
                 <Slide left>
