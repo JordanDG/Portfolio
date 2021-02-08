@@ -118,65 +118,65 @@ const ProficienciesIconContainer = styled.div`
 
 function Proficiencies(props) {
     return (
-        <div>
+        <div id="ProficienciesID">
             <ProficienciesContainer>
                 <SectionTitle>Proficiencies</SectionTitle>
                 <ProficienciesIconContainer>
-                    <Tooltip title="Adobe Illustrator" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Adobe Illustrator" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={AdobeIllustrator} alt="Adobe Illustrator" />
                     </Tooltip>
-                    <Tooltip title="Brackets IDE" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>             
+                    <Tooltip title="Brackets IDE" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>             
                         <img src={Brackets} alt="Brackets IDE" />
                     </Tooltip>
-                    <Tooltip title="CSS3" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>                  
+                    <Tooltip title="CSS3" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>                  
                         <img src={css} alt="CSS3" />
                     </Tooltip>
-                    <Tooltip title="Figma" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow> 
+                    <Tooltip title="Figma" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow> 
                         <img src={figma} alt="Figma" />
                     </Tooltip>
-                    <Tooltip title="Git" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Git" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={git} alt="Git" />
                     </Tooltip>
-                    <Tooltip title="Github" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Github" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={github} alt="Github" />
                     </Tooltip>
-                    <Tooltip title="HTML5" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="HTML5" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={html} alt="HTML5" />
                     </Tooltip>
-                    <Tooltip title="Javascript / ES6" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Javascript / ES6" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={js} alt="Javascript / ES6" />
                     </Tooltip>
-                    <Tooltip title="MongoDB" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="MongoDB" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={mongo} alt="MongoDB" />
                     </Tooltip>
-                    <Tooltip title="PHP" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="PHP" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={php} alt="PHP" />
                     </Tooltip>
-                    <Tooltip title="Adobe Photoshop" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Adobe Photoshop" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={ps} alt="Adobe Photoshop" />
                     </Tooltip>
-                    <Tooltip title="Python" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Python" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={python} alt="Python" />
                     </Tooltip>
-                    <Tooltip title="React" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="React" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={react} alt="React" />
                     </Tooltip>
-                    <Tooltip title="SASS" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="SASS" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={sass} alt="SASS" />
                     </Tooltip>
-                    <Tooltip title="MySQL" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="MySQL" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={sql} alt="MySQL" />
                     </Tooltip>
-                    <Tooltip title="TailwindCSS" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="TailwindCSS" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={tailwind} alt="TailwindCSS" />
                     </Tooltip>
-                    <Tooltip title="VSCode" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="VSCode" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={vscode} alt="VSCode" />
                     </Tooltip>
-                    <Tooltip title="Wordpress" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Wordpress" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={wordpress} alt="Wordpress" />
                     </Tooltip>
-                    <Tooltip title="Adobe Xd" placement="bottom" leaveTouchDelay="100" enterTouchDelay="100" arrow>
+                    <Tooltip title="Adobe Xd" placement="bottom" leaveTouchDelay={100} enterTouchDelay={100} arrow>
                         <img src={xd} alt="Adobe Xd" />
                     </Tooltip>
                 </ProficienciesIconContainer>                              

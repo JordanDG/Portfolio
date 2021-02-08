@@ -84,7 +84,7 @@ const AboutMeText = styled.p`
 
 function AboutMe(props) {
     return (
-        <div>
+        <div id="AboutID">
             <AboutMeContainer>
                 <img src={ProfilePicture} alt="Profile" />
                 <AboutMeParagraphContainer>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes }  from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Fade from 'react-reveal/Fade';
+import { Link } from "react-scroll";
 
 /* Icons */
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -78,6 +79,10 @@ const HomeSplashButtonLeft = styled.button`
         color: #0063D5;
         cursor: pointer;
     }
+
+    & p {
+        border-radius: 25px;
+    }
 `;
 
 const HomeSplashButtonRight = styled.button`
@@ -94,6 +99,11 @@ const HomeSplashButtonRight = styled.button`
     &:hover {
         color: #241f21;
         cursor: pointer;
+    }
+
+    & p {
+        background-color: #0063D5;
+        border-radius: 25px;
     }
 `;
 
@@ -134,6 +144,7 @@ const HomeSplashContinuePromptArrowContainer = styled.div`
 `;
 
 function HomeSplashText(props) {
+
     return (
         <div>
             <HomeSplashTextContainer>
@@ -142,8 +153,8 @@ function HomeSplashText(props) {
                 </Fade>
                 <HomeSplashButtons>
                     <Fade bottom>
-                        <HomeSplashButtonLeft>Projects</HomeSplashButtonLeft>
-                        <HomeSplashButtonRight>Contact</HomeSplashButtonRight>
+                        <HomeSplashButtonLeft><Link to="ProjectsID" spy={true} smooth={true} offset={50} duration={500}><p>Projects</p></Link></HomeSplashButtonLeft>
+                        <HomeSplashButtonRight><Link to="ContactID" spy={true} smooth={true} offset={50} duration={500}><p>Contact</p></Link></HomeSplashButtonRight>
                     </Fade>
                 </HomeSplashButtons>
             </HomeSplashTextContainer>

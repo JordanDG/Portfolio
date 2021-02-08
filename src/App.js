@@ -12,6 +12,9 @@ import AboutMe from './components/Homepage/aboutme.js';
 /* Section 3 */
 import Proficiencies from "./components/Homepage/proficiencies.js";
 
+/* Section 4 */
+import Contact from "./components/Homepage/contact.js";
+
 /* Section Styling */
 const SectionOne = styled.section`
   height: 100vh;
@@ -40,6 +43,11 @@ const SectionThree = styled.section`
 
 `;
 
+const SectionFive = styled.section`
+  width: 100%;
+  height: 50vh;
+`;
+
 function App() {
   return (
     <div>
@@ -53,6 +61,9 @@ function App() {
       <SectionThree>
         <Proficiencies />
       </SectionThree>
+      <SectionFive>
+        <Contact />
+      </SectionFive>
     </div>
   );
 }

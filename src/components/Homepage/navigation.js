@@ -3,6 +3,7 @@ import styled, { createGlobalStyle, keyframes }  from 'styled-components';
 import { Divide as Hamburger } from 'hamburger-react';
 import Slide from 'react-reveal/Slide';
 import Rotate from 'react-reveal/Rotate';
+import { Link } from "react-scroll";
 
 const fadeIn = keyframes`
     from {
@@ -24,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background-color: #241f21;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
   }
 `;
 
@@ -59,7 +61,7 @@ const Menu = styled.ul`
     align-items: center;
     justify-content: flex-end;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1340px) {
         display: none;
     }
 
@@ -77,7 +79,7 @@ const ATag = styled.a`
     font-weight: 300;
     transition: all 0.5s ease-in-out;
 
-    @media (max-width: 1480px) {
+    @media (max-width: 1580px) {
         font-size: 18px;
     } 
 
@@ -93,7 +95,7 @@ const MobileMenuContainer = styled.div`
     width: 50px;
     height: 50px;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1340px) {
         display: block;
     } 
 `;
@@ -151,7 +153,7 @@ const MobileMenuAligner = styled.div`
 
 function NavigationBar(props) {
 
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false);
 
     return (
         <div>
@@ -162,11 +164,31 @@ function NavigationBar(props) {
                 </Slide>
                 <Menu>
                     <Rotate top right>
-                        <li><ATag active href="#active">Home</ATag></li>
-                        <li><ATag href="#link">About</ATag></li>
-                        <li><ATag href="#link">Proficiencies</ATag></li>
-                        <li><ATag href="#link">Projects</ATag></li>
-                        <li><ATag href="#link">Contact</ATag></li>
+                        <li>
+                            <ATag active href="#active">
+                                <p>Home</p>
+                            </ATag>
+                        </li>
+                        <li>
+                            <ATag href="#link">
+                                <Link to="AboutID" spy={true} smooth={true} offset={50} duration={500}><p>About</p></Link>
+                            </ATag>
+                        </li>
+                        <li>
+                            <ATag href="#link">
+                                <Link to="ProficienciesID" spy={true} smooth={true} offset={50} duration={500}><p>Proficiencies</p></Link>
+                            </ATag>
+                        </li>
+                        <li>
+                            <ATag href="#link">
+                                <Link to="ProjectID" spy={true} smooth={true} offset={50} duration={500}><p>Projects</p></Link>
+                            </ATag>
+                        </li>
+                        <li>
+                            <ATag href="#link">
+                                <Link to="ContactID" spy={true} smooth={true} offset={50} duration={500}><p>Contact</p></Link>
+                            </ATag>
+                        </li>
                     </Rotate>
                 </Menu>  
                 <MobileMenuAligner>
@@ -178,10 +200,18 @@ function NavigationBar(props) {
                     { isOpen && (
                         <MobileMenu>
                             <ATagMobile active href="#active">Home</ATagMobile>
-                            <ATagMobile href="#link">About</ATagMobile>
-                            <ATagMobile href="#link">Proficiencies</ATagMobile>
-                            <ATagMobile href="#link">Projects</ATagMobile>
-                            <ATagMobile href="#link">Contact</ATagMobile>
+                            <ATagMobile href="#link">
+                                <Link to="AboutID" spy={true} smooth={true} offset={50} duration={500}><p>About</p></Link>
+                            </ATagMobile>
+                            <ATagMobile href="#link">
+                                <Link to="ProficienciesID" spy={true} smooth={true} offset={50} duration={500}><p>Proficiencies</p></Link>
+                            </ATagMobile>
+                            <ATagMobile href="#link">
+                                <Link to="ProjectID" spy={true} smooth={true} offset={50} duration={500}><p>Projects</p></Link>
+                            </ATagMobile>
+                            <ATagMobile href="#link">
+                                <Link to="ContactID" spy={true} smooth={true} offset={50} duration={500}><p>Contact</p></Link>
+                            </ATagMobile>
                         </MobileMenu>
                     )}
                 </MobileMenuAligner>
