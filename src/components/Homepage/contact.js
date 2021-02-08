@@ -182,7 +182,7 @@ const ContactSubmitButton = styled.button`
 
 const SubmissionSuccessMessageContainer = styled.div`
     width: 100%;
-    height: 10vh;
+    height: 150px;
     background-color: #0063D5;
     text-align: center;
     color: #fff;

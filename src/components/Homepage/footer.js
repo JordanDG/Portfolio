@@ -15,6 +15,7 @@ const Footer = styled.div`
     @media (max-width: 499px) {
         width: 85vw;
         margin-left: 7.5vw;
+        height: 100px;
     }
 `;
 
@@ -54,7 +55,7 @@ function FooterMain(props) {
                 <FooterSplashText>Copyright Jordan Da Graca, 2021, all rights reserved.</FooterSplashText>
                 <FooterNavContainer>
                     <FooterNav>
-                        <li><Link to="AboutID" spy={true} smooth={true} offset={50} duration={500}><p>Back to top</p></Link></li>
+                        <li><Link to="HomeID" spy={true} smooth={true} offset={50} duration={500}><p>Back to top</p></Link></li>
                     </FooterNav>
                 </FooterNavContainer>
             </Footer>
