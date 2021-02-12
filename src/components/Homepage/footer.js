@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled, { createGlobalStyle, keyframes }  from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 import { Link } from "react-scroll";
 
 const Footer = styled.div`

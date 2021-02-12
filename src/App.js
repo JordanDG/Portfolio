@@ -13,43 +13,70 @@ import AboutMe from './components/Homepage/aboutme.js';
 import Proficiencies from "./components/Homepage/proficiencies.js";
 
 /* Section 4 */
+import Projects from "./components/Homepage/projects.js";
+
+/* Section 5 */
 import Contact from "./components/Homepage/contact.js";
 
 /* Footer */
 import FooterMain from"./components/Homepage/footer.js";
 
+/* Vh Calc */
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
 /* Section Styling */
 const SectionOne = styled.section`
-  height: 100vh;
+height: calc(var(--vh, 1vh) * 100);
   width: 100%;
 `;
 
 const SectionTwo = styled.section`
-  height: 40vh;
+  height: calc(var(--vh, 1vh) * 40);
   width: 100%;
 
   @media (max-width: 1480px) {
-    height: 70vh;
+    height: calc(var(--vh, 1vh) * 70);
   }
 
   @media (max-width: 499px) {
-    height: 125vh;
+    height: calc(var(--vh, 1vh) * 125);
   }
 `;
 const SectionThree = styled.section`
   width: 100%;
-  height: 40vh;
+  height: calc(var(--vh, 1vh) * 40);
 
   @media (max-width: 1480px) {
-    height: 70vh;
+    height: calc(var(--vh, 1vh) * 70);
   }
+`;
 
+const SectionFour = styled.section`
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 90);
+
+  @media (max-width: 1480px) {
+    height: calc(var(--vh, 1vh) * 135);
+  }
 `;
 
 const SectionFive = styled.section`
   width: 100%;
-  height: 50vh;
+  height: calc(var(--vh, 1vh) * 40);
+
+  @media (max-width: 1480px) {
+    height: calc(var(--vh, 1vh) * 70);
+  }
 `;
 
 function App() {
@@ -65,6 +92,9 @@ function App() {
       <SectionThree>
         <Proficiencies />
       </SectionThree>
+      <SectionFour>
+        <Projects />
+      </SectionFour>
       <SectionFive>
         <Contact />
         <FooterMain />

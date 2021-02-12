@@ -178,6 +178,10 @@ const ContactSubmitButton = styled.button`
         background-color: #0063D5;
         cursor: pointer;
     }
+
+    @media (max-width: 500px) {
+        height: 80px;
+    }
 `;
 
 const SubmissionSuccessMessageContainer = styled.div`
@@ -265,11 +269,10 @@ function Contact() {
                             <SubmissionSuccessWindowClose onClick={() => setServerState({ status: null })}>Dismiss</SubmissionSuccessWindowClose>
                         </SubmissionSuccessMessageContainer>
                     )}
-
                 </form>
             </ContactContainer>
         </div>
         );
     }
-
+    
 export default Contact;

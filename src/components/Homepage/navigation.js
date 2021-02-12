@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #241f21;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    --ViewportSizing: 
   }
 `;
 
