@@ -27,16 +27,9 @@ let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-// We listen to the resize event
-window.addEventListener('resize', () => {
-  // We execute the same script as before
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
-
 /* Section Styling */
 const SectionOne = styled.section`
-height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
 `;
 
@@ -45,19 +38,19 @@ const SectionTwo = styled.section`
   width: 100%;
 
   @media (max-width: 1480px) {
-    height: calc(var(--vh, 1vh) * 70);
+    height: calc(var(--vh, 1vh) * 80);
   }
 
   @media (max-width: 499px) {
-    height: calc(var(--vh, 1vh) * 125);
+    height: calc(var(--vh, 1vh) * 180);
   }
 `;
 const SectionThree = styled.section`
   width: 100%;
-  height: calc(var(--vh, 1vh) * 40);
+  height: calc(var(--vh, 1vh) * 60);
 
-  @media (max-width: 1480px) {
-    height: calc(var(--vh, 1vh) * 70);
+  @media (max-width: 499px) {
+    height: calc(var(--vh, 1vh) * 110);
   }
 `;
 
@@ -65,8 +58,8 @@ const SectionFour = styled.section`
   width: 100%;
   height: calc(var(--vh, 1vh) * 90);
 
-  @media (max-width: 1480px) {
-    height: calc(var(--vh, 1vh) * 135);
+  @media (max-width: 500px) {
+    height: calc(var(--vh, 1vh) * 100);
   }
 `;
 

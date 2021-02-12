@@ -29,6 +29,11 @@ const AboutMeContainer = styled.div`
         @media (max-width: 1480px) {
             margin-bottom: 25px;
         }
+
+        @media (max-width: 499px) {
+            width: 400px;
+            height: 400px;
+        }
     }
 `;
 

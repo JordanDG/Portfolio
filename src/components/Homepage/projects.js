@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ProjectsContainer = styled.div`
     width: 90vw;
     margin-left: 5vw;
-    height: 85vh;
+    height: calc(var(--vh, 1vh) * 85);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,11 +82,17 @@ const ProjectFeature = styled.div`
     }
 
     @media (max-width: 500px) {
-        height: 50%;
+        height: 150px;
         width: 80%;
         margin-bottom: 5%;
     }
 `;
+
+/* Vh Calc */
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 function Projects(props) {
 
